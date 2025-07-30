@@ -216,17 +216,19 @@ footer {
 }
 
 .formation-banner {
-    /* background: rgba(35, 255, 215, 0.09); */
     background: rgba(20, 24, 34, 0.45);
+    box-shadow: 0 2px 18px #ffb30018;
     color: #33ffe4;
     border-radius: 1.2em;
     padding: 0.31em 1.4em 0.31em 1.1em;
     font-size: 0.99em;
     font-weight: 500;
-    box-shadow: 0 1px 5px #23d18b0a;
     display: flex;
     align-items: center;
     gap: 0.5em;
+    padding: 1em 1.5em;
+    max-width: 680px;
+    margin-bottom: 0.6em;
 }
 
 .badge-dispo {
@@ -319,8 +321,6 @@ footer {
     width: 74px;
     height: 74px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 2.2px solid #23e3b3;
     background: #17191d;
     box-shadow: 0 2px 20px #23d18b33, 0 0 0 3.5px #29f6c730;
     transition: transform 0.16s;
