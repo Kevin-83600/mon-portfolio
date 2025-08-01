@@ -640,7 +640,6 @@ footer {
 
 /* GLOW EFFECT SKILL-TITLE */
 @keyframes skill-title-soft-glow {
-
     0%,
     100% {
         filter: drop-shadow(0 0 3px #fff2) drop-shadow(0 0 8px #fff1);
