@@ -222,22 +222,17 @@ footer {
     font-weight: 500;
     display: flex;
     align-items: center;
-    gap: 0.5em;
     padding: 1em 1.5em;
     max-width: 680px;
-    margin-bottom: 0.6em;
 }
 
 .badge-dispo {
     background: linear-gradient(90deg, #3dff89 0%, #1be986 60%, #18ffc2 100%);
-    color: #072c13;
+    color: #6e5877;
     font-weight: 700;
     font-size: 1.04em;
     border-radius: 2em;
     padding: 0.29em 1.25em 0.29em 1.05em;
-    box-shadow:
-        0 2px 12px #2aff9799,
-        0 1px 6px #12ffb220;
     display: inline-flex;
     align-items: center;
     gap: 0.5em;
@@ -248,12 +243,12 @@ footer {
     backdrop-filter: blur(2.5px) brightness(1.06);
     transition: box-shadow 0.15s, background 0.15s, transform 0.15s;
     z-index: 2;
-    text-shadow: 0 2px 8px #aaffd833;
+    /* text-shadow: 0 2px 8px #aaffd833; */
 }
 
 .badge-dispo:hover,
 .badge-dispo:focus {
-    color: #6e5877;
+    color: #ffffff;
     box-shadow:
         0 4px 20px #2aff9799,
         0 2px 10px #12ffb24f;
@@ -350,6 +345,43 @@ footer {
     border-width: 1.2px;
 }
 
+.btn {
+    font-weight: 600;
+    padding: 0.5rem 1.1rem;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-cv {
+    background: linear-gradient(135deg, #ffb300, #ff8800);
+}
+
+.btn-contact {
+    background: linear-gradient(135deg, #17a2b8, #138496);
+}
+
+.btn-competences {
+    background: linear-gradient(135deg, #00c9a7, #007f73);
+}
+
+.btn-projets {
+    background: linear-gradient(135deg, #28a745, #218838);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #fff3, 0 0 18px #fff2;
+}
+
+
+.btn-outline-warning:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffb300aa, 0 0 20px #ffb30066;
+}
+
+
 .btn-gradient {
     background: linear-gradient(90deg, #ffb300 0%, #23d18b 100%);
     color: #191c23;
@@ -436,13 +468,21 @@ footer {
 }
 
 .hero-intro-box {
-    background: rgb(20 24 34 / 45%);
-    border-radius: 1.1em;
-    box-shadow: 0 2px 18px #ffb30018;
-    padding: 1em 1.5em;
-    max-width: 680px;
-    margin-bottom: 0.6em;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px #0005;
 }
+
+.intro-text {
+    margin-top: -3rem
+}
+
 
 .hero-title {
     font-size: clamp(1.8rem, 8vw, 2.8rem);
@@ -559,6 +599,10 @@ footer {
     background-clip: text;
 }
 
+.text-gradient-2 {
+    color: #fff;
+}
+
 .dev-stack-icons {
     filter: invert(1) brightness(1.8);
     margin-bottom: 0.2em;
@@ -610,7 +654,7 @@ footer {
 }
 
 
-.skill-title {
+.pages-titles {
     color: #fff;
     font-size: clamp(1rem, 4vw, 1.8rem);
     letter-spacing: 0.6px;
@@ -626,7 +670,7 @@ footer {
 
 /* --- MOBILE OPTIMISATION --- */
 @media (width <=600px) {
-    .skill-title {
+    .pages-titles {
         font-size: clamp(1.1rem, 7vw, 1.7rem);
         min-height: 1.3em;
         letter-spacing: 0.2px;
@@ -638,8 +682,9 @@ footer {
     }
 }
 
-/* GLOW EFFECT SKILL-TITLE */
-@keyframes skill-title-soft-glow {
+/* GLOW EFFECT PAGES-TITLES */
+@keyframes pages-titles-soft-glow {
+
     0%,
     100% {
         filter: drop-shadow(0 0 3px #fff2) drop-shadow(0 0 8px #fff1);
@@ -649,6 +694,28 @@ footer {
         filter: drop-shadow(0 0 6px #fff3) drop-shadow(0 0 14px #fff2);
     }
 }
+
+.badge-warning-custom {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.82em;
+    padding: 0.4em 0.8em;
+    border-radius: 12px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ffcc70, #ff8a00);
+    color: #1a1a1a;
+    box-shadow: 0 0 6px #0004;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+}
+
+.badge-warning-custom:hover {
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 12px #ff9100cc, 0 0 18px #ffaa00aa;
+}
+
 
 
 /* -------- CARDS PROJECTS --------- */
@@ -665,6 +732,24 @@ footer {
     flex-direction: column;
 }
 
+.img-fluid {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: rgba(82, 82, 82, 0.685) solid 2px;
+    border-radius: 1rem;
+    box-shadow: 0 0 12px #ffffff11, 0 4px 18px #00000033;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+
 .service-card {
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 12px #0007;
@@ -678,7 +763,11 @@ footer {
 }
 
 .service-card .bi {
-    filter: drop-shadow(0 0 4px #000a);
+    color: #ffffff
+}
+
+.service-card .bi:hover {
+    color: #50e661
 }
 
 @media (width <=991.98px) {

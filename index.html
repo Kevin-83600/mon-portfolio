@@ -8,7 +8,7 @@
     <meta name="author" content="Votre Nom" />
     <meta name="robots" content="index, follow" />
 
-    <title>WK Dev Studio © | Accueil</title>
+    <title>Accueil | WK Dev Studio ©  </title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap CSS -->
@@ -114,27 +114,27 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#accueil"
+              <a class="nav-link text-white" href="index.html"
                 ><span class="nav-gradient">Accueil</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#accueil"
+              <a class="nav-link text-white" href="./pages/a-propos.html"
                 ><span class="nav-gradient">À propos</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#projets"
+              <a class="nav-link text-white" href="./pages/projets.html"
                 ><span class="nav-gradient">Projets</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#passions"
+              <a class="nav-link text-white" href="./pages/passions.html"
                 ><span class="nav-gradient">Passions</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#contact"
+              <a class="nav-link text-white" href="./pages/contact.html"
                 ><span class="nav-gradient">Contact</span></a
               >
             </li>
@@ -164,56 +164,58 @@
             <span id="carouselTypewriter"></span>
           </div>
           <!-- Boutons principaux -->
-          <div
-            class="profile-actions d-flex flex-wrap justify-content-center gap-2 mb-3"
-          >
+          <div class="profile-actions d-flex flex-wrap justify-content-center gap-2 mb-3">
             <a
-              href="assets/docs/cv-wkdev.pdf"
-              class="btn btn-outline-light btn-sm"
-              target="_blank"
-            >
-              <i class="bi bi-file-earmark-arrow-down me-1"></i>CV PDF
+                href="assets/docs/cv-wkdev.pdf"
+                 class="btn btn-cv btn-sm"
+                download
+                >
+               <i class="bi bi-file-earmark-arrow-down me-2"></i>Télécharger le CV
             </a>
-            <a href="#contact" class="btn btn-outline-info btn-sm">
+
+            <a href="#contact" class="btn btn-contact btn-sm">
               <i class="bi bi-envelope-arrow-up me-1"></i>Contact
             </a>
-            <a href="#services" class="btn btn-outline-info btn-sm">
-              <i class="bi bi-lightbulb"></i> Compétences
+
+            <a href="#services" class="btn btn-competences btn-sm">
+              <i class="bi bi-lightbulb me-1"></i>Compétences
             </a>
-            <a href="#projets" class="btn btn-outline-success btn-sm">
-              <i class="bi bi-layers"></i> Projets
+
+            <a href="#projets" class="btn btn-projets btn-sm">
+              <i class="bi bi-layers me-1"></i>Projets
             </a>
-            <p class="lead phrase-accroche-discrete text-white mb-4">
-              Découvrez mes <span class="mot-cle-discret">projets</span>, mes
-              <span class="mot-cle-discret">passions</span> et mon
-              <span class="mot-cle-discret">parcours</span> en tant que
-              développeur web.
-            </p>
-            <!-- Badges Disponibilité & Formation -->
-            <div
-              class="bandeau-formation-row d-flex align-items-center justify-content-center mb-3"
-            >
-              <div
-                class="formation-banner d-flex align-items-center mb-0 hero-intro-box card h-100 shadow-sm bg-dark text-white border-0 rounded-4 service-card"
-              >
-                <span>
-                  <i class="bi bi-mortarboard text-gradient me-1"></i>
-                  En Formation :
-                  <span class="fw-semibold text-gradient"
-                    >Développeur Web &amp; Web Mobile</span
-                  >
-                </span>
-                <span class="badge-dispo ms-2">
-                  <i class="bi bi-lightning-charge"></i> Disponible
-                </span>
-              </div>
-            </div>
           </div>
+
+            <!-- Badges Disponibilité & Formation -->
+           <!-- Bandeau Formation & Disponibilité -->
+<div class="bandeau-formation-row d-flex justify-content-center mb-3">
+  <div
+    class="formation-banner card shadow-sm bg-dark text-white border-0 rounded-4 service-card p-4"
+  >
+    <div class="mb-3 d-flex align-items-center">
+      <i class="bi bi-mortarboard text-gradient me-2 fs-4"></i>
+      <span class="fs-5 fw-semibold text-gradient">
+        En Formation : Développeur Web & Web Mobile
+      </span>
+    </div>
+    <ul class="list-unstyled text-white mb-3 ms-1 small">
+      <li><strong>🎓 Organisme :</strong> Mode 83</li>
+      <li><strong>📜 Diplôme :</strong> Titre Professionnel de Développeur Web Full Stack</li>
+      <li><strong>📍 Localisation :</strong> Fréjus, France</li>
+      <li><strong>🗓️ Durée :</strong> 2025 - 2026</li>
+    </ul>
+
+    <span class="badge-dispo d-inline-flex align-items-center px-3 py-2 rounded-pill">
+      <i class="bi bi-check-circle-fill text-success me-2"></i> Disponible
+    </span>
+  </div>
+</div>
+
           <!-- Intro principale -->
           <div
             class="hero-intro-box card h-100 shadow-sm bg-dark text-white border-0 rounded-4 service-card"
           >
-            <p class="lead intro-texte animate-fade-up text-color mb-2 mt-4">
+            <p class="lead intro-texte animate-fade-up text-color mb-2">
               Actuellement en formation pour devenir : <br />
               <span class="text-gradient"
                 ><strong>Développeur Web et Web Mobile</strong></span
@@ -231,14 +233,13 @@
             </p>
             <!-- BOUTON DECOUVRIR MES PROJETS -->
             <a
-              href="#projets"
+              href="./pages/projets.html"
               class="btn btn-gradient fw-bold px-4 py-2 mt-2"
               style="font-size: 1.15rem"
             >
               <i class="bi bi-chevron-down me-2"></i>Découvrir mes projets
             </a>
           </div>
-        </div>
       </section>
     </header>
 
@@ -246,7 +247,7 @@
     <main class="container mb-5" role="main">
       <!-- CARD SERVICES -->
       <section id="services" class="mb-5">
-        <h2 class="fw-bold text-center skill-title">
+        <h2 class="fw-bold text-center pages-titles">
           Mes services &amp; Compétences
         </h2>
         <div class="row g-4 justify-content-center">
@@ -308,8 +309,8 @@
 
                 <!-- Barre Compétences Développement Web -->
                 <div class="progress-skill mt-3">
-                  <div class="progress-bar-skill bg-info" data-skill="90">
-                    <span>90%</span>
+                  <div class="progress-bar-skill bg-info" data-skill="40">
+                    <span>40%</span>
                   </div>
                 </div>
               </div>
@@ -442,23 +443,14 @@
 
                 <!-- Barre Compétences Bot & Automatisation -->
                 <div class="progress-skill mt-3">
-                  <div class="progress-bar-skill bg-success" data-skill="88">
-                    <span>88%</span>
+                  <div class="progress-bar-skill bg-success" data-skill="40">
+                    <span>40%</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- SECTION CONTACT -->
-      <section id="contact" class="text-center text-white">
-        <h2 class="mb-4">Contact</h2>
-        <p>
-          Écrivez-moi à :
-          <a href="mailto:contact@exemple.com">contact@exemple.com</a>
-        </p>
       </section>
     </main>
 
