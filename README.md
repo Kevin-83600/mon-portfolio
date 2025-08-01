@@ -1,4 +1,3 @@
-
 # 🌟 Mon Portfolio Développeur Web & Mobile
 
 Bienvenue sur mon portfolio responsive, conçu dans le cadre de ma formation de développeur web & mobile.  
@@ -53,5 +52,4 @@ Ce projet me permet de mettre en avant mes compétences techniques, graphiques e
 
 ## 📬 Me contacter
 
-- 📧 Email : kevin@example.com  
-- 💬 Telegram : [@KevinDesign](https://t.me/KevinDesign)
+- 📧 Email : kevin@example.com
