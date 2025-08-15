@@ -53,4 +53,4 @@ Ce projet me permet de mettre en avant mes compétences techniques, graphiques e
 
 ## 📬 Me contacter
 
-- 📧 Email : kevin@example.com
+- 📧 Email : kevinwlosniewski@mode83.onmicrosoft.com
