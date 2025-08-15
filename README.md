@@ -32,13 +32,14 @@ Ce projet me permet de mettre en avant mes compétences techniques, graphiques e
 
 ```
 📦 mon-portfolio
-├── pages/                # Pages HTML (index, contact, a-propos...)
+├── pages/                # Pages HTML (contact, a-propos...)
 ├── css/                  # Feuilles de style
 ├── assets/               # Images, logos, CV PDF
 ├── .github/workflows/    # Fichiers de configuration CI/CD
 ├── .htmlhintrc           # Règles HTML
 ├── .stylelintrc          # Règles CSS
 ├── .eslintrc             # Règles JS
+├── index.html            # Page d'accueil
 └── README.md             # Présentation du projet
 ```
 
