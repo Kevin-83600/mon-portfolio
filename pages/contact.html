@@ -12,16 +12,18 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap CSS -->
-    <link
+    <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+      media="print" onload="this.media='all'">
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
 
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preload" as="image" href="../assets/images/logo-white.webp">
+
   </head>
 
   <body class="animated-bg">
@@ -89,12 +91,15 @@
       aria-label="Menu principal"
     >
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img
             src="../assets/images/logo-white.webp"
-            alt="Logo"
+            alt="Logo WK Dev Studio"
+            width="40"
+            height="40"
+            loading="lazy"
+            decoding="async"
             class="navbar-logo-animated"
-            style="height: 40px; width: auto"
           />
           <span class="ms-2 fw-bold"
             >WK Dev Studio © <small class="text-muted">Titre</small></span
@@ -114,27 +119,42 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link text-white" href="../index.html"
+              <a
+                class="nav-link text-white"
+                aria-label="Aller à la page Accueil"
+                href="../index.html"
                 ><span class="nav-gradient">Accueil</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="a-propos.html"
+              <a
+                class="nav-link text-white"
+                aria-label="Aller à la page À propos"
+                href="a-propos.html"
                 ><span class="nav-gradient">À propos</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="projets.html"
+              <a
+                class="nav-link text-white"
+                aria-label="Aller à la page Projets"
+                href="projets.html"
                 ><span class="nav-gradient">Projets</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="passions.html"
+              <a
+                class="nav-link text-white"
+                aria-label="Aller à la page Passions"
+                href="passions.html"
                 ><span class="nav-gradient">Passions</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html"
+              <a
+                class="nav-link text-white"
+                aria-label="Aller à la page Contact"
+                href="contact.html"
                 ><span class="nav-gradient">Contact</span></a
               >
             </li>
@@ -149,16 +169,17 @@
         <div class="container" style="max-width: 680px">
           <!-- Avatar -->
           <img
-            src="../assets/images/logo-white.png"
-            alt="Avatar"
+            src="../assets/images/logo-white.webp"
+            alt="Logo WK Dev Studio"
             class="profile-avatar shadow mb-2 mx-auto"
-          />
+            width="40"
+            height="40"
+          fetchpriority="high"
+          loading="eager" decoding="async">
           <!-- Nom / Studio -->
-          <h1 class="studio-name fw-bold fs-4 mb-1">WK Studio Dev ©</h1>
-          <!-- Localisation -->
-          <div class="location mb-2 text-info small">
-            <i class="bi bi-geo-alt me-1"></i> Fréjus, France
-          </div>
+          <h1 class="hero-title studio-name fw-bold fs-4 mb-1">
+            WK Studio Dev ©
+          </h1>
           <!-- Phrase d'accroche -->
           <div class="carousel-typewriter mb-3">
             <span id="carouselTypewriter"></span>
@@ -167,25 +188,42 @@
           <div
             class="profile-actions d-flex flex-wrap justify-content-center gap-2 mb-3"
           >
-            <a href="contact.html" class="btn btn-contact btn-sm">
+            <a
+              href="contact.html"
+              class="btn btn-contact btn-sm"
+              aria-label="Aller à la page Contact"
+            >
               <i class="bi bi-envelope-arrow-up me-1"></i>Contact
             </a>
 
-            <a href="../index.html" class="btn btn-competences btn-sm">
+            <a
+              href="../index.html"
+              class="btn btn-competences btn-sm"
+              aria-label="Aller à la section Compétences"
+            >
               <i class="bi bi-lightbulb me-1"></i>Compétences
             </a>
 
-            <a href="projets.html" class="btn btn-projets btn-sm">
+            <a
+              href="projets.html"
+              class="btn btn-projets btn-sm"
+              aria-label="Aller à la page Projets"
+            >
               <i class="bi bi-layers me-1"></i>Projets
             </a>
 
-            <a href="passions.html" class="btn btn-passions btn-sm">
+            <a
+              href="passions.html"
+              class="btn btn-passions btn-sm"
+              aria-label="Aller à la page Passions"
+            >
               <i class="bi bi-layers me-1"></i>Passions
             </a>
 
             <a
               href="../assets/docs/cv-wkdev.pdf"
               class="btn btn-cv btn-sm"
+              aria-label="Télécharger le CV"
               download
             >
               <i class="bi bi-file-earmark-arrow-down me-2"></i>Télécharger le
