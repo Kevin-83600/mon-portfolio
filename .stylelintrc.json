@@ -3,5 +3,7 @@
     "stylelint-config-standard"
   ],
   "rules": {
+    "block-no-empty": true,
+    "rule-empty-line-before": null
   }
-}
+  }
