@@ -1,4 +1,4 @@
-name: CI + Déploiement GitHub Pages
+name: CI + Déploiement Pages GitHub
 
 permissions:
   contents: write
