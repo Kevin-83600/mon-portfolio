@@ -16,11 +16,19 @@
     "url": "https://github.com/Kevin-83600/mon-portfolio/issues"
   },
   "homepage": "https://github.com/Kevin-83600/mon-portfolio#readme",
-  "description": "",
+  "description": "Bienvenue sur mon portfolio responsive, conçu dans le cadre de ma formation de développeur web & mobile.   Ce projet me permet de mettre en avant mes compétences techniques, graphiques et organisationnelles à travers un site professionnel, déployé automatiquement avec GitHub Pages.",
   "dependencies": {
     "eslint": "^9.32.0",
-    "htmlhint": "^1.6.3",
-    "stylelint": "^16.23.0",
+    "htmlhint": "^1.6.3"
+  },
+  "devDependencies": {
+    "stylelint": "^16.23.1",
     "stylelint-config-standard": "^39.0.0"
-  }
+  },
+
+  "scripts": {
+  "lint:css": "stylelint \"css/**/*.css\"",
+  "lint:css:fix": "stylelint \"css/**/*.css\" --fix"
+}
+
 }
