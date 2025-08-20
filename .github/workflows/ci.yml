@@ -1,39 +1,48 @@
-name: CI + Déploiement
-
+permissions:
+  contents: write
+ 
+name: CI + Déploiement GitHub Pages
+ 
 on:
   push:
-    branches:
-      - main
-
+    branches: [ main ]
+ 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+ 
     steps:
-      - name: Checkout du dépôt
-        uses: actions/checkout@v3
-
-      - name: Installer Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18"
-
-      - name: Installer les dépendances
-        run: npm install
-
-      - name: Vérifier le HTML
-        run: npx htmlhint .
-
-      - name: Vérifier le CSS
-        run: npx stylelint "css/**/*.css"
-
-      - name: Vérifier le JS
-        run: npx eslint .
-
-      - name: Build (si tu as un build, sinon à supprimer)
-        run: npm run build || echo "Pas de build"
-
-      - name: Déployer sur GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+    - name: Cloner le dépôt
+      uses: actions/checkout@v3
+ 
+    - name: Installer Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+ 
+    - name: Installer les dépendances
+      run: npm install
+     
+    - name: Installer HTMLHint
+      run: npm install -g htmlhint --save-dev  
+ 
+    - name: Vérifier le HTML
+      run: npx htmlhint .
+ 
+    - name: Installer stylelint globalement
+      run: sudo npm install -g stylelint
+ 
+    - name: Vérifier le CSS
+      run: npx stylelint "**/*.css"
+     
+    - name: Install ESLint
+      run: npm install -g eslint
+ 
+    - name: Vérifier le JS
+      run: npx eslint .
+     
+    - name: Déployer sur GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
