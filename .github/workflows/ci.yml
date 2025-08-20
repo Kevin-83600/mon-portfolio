@@ -5,7 +5,7 @@ permissions:
 
 on:
   push:
-    branches: [main, github-pages]
+    branches: [main, gh-pages]
 
 jobs:
   build-and-deploy:
@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - name: Cloner le dépôt
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Installer Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "18"
 
@@ -45,5 +45,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./pages
+          publish_dir: .
           publish_branch: gh-pages
