@@ -7,15 +7,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kevin-83600/mon-cv.git"
+    "url": "git+https://github.com/Kevin-83600/mon-portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kevin-83600/mon-cv/issues"
+    "url": "https://github.com/Kevin-83600/mon-portfolio/issues"
   },
-  "homepage": "https://github.com/Kevin-83600/mon-cv#readme",
+  "homepage": "https://github.com/Kevin-83600/mon-portfolio#readme",
   "description": "",
   "dependencies": {
     "eslint": "^9.32.0",
