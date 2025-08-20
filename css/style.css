@@ -725,9 +725,9 @@ h1,
   max-width: 320px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border: rgba(82, 82, 82, 0.68%) solid 2px;
+  border: rgb(82 82 82 / 0.68%) solid 2px;
   border-radius: 1rem;
-  box-shadow: 0 0 12px #fff11f, 0 4px 18px #00000033;
+  box-shadow: 0 0 12px #fff11f, 0 4px 18px #0003;
   transition: transform 0.3s ease;
   margin: 0 auto;
   display: block;
