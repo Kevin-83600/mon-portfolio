@@ -1,9 +1,230 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Passions</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Page passions du site web portfolio WK Dev Studio" />
+  <meta name="author" content="WK Dev Studio" />
+  <meta name="robots" content="index, follow" />
+
+  <title>Mes Passions | WK Dev Studio ©</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="animated-bg">
+
+  <!-- BARRE DE NAVIGATION STICKY -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark position-sticky top-0" style="z-index: 1001"
+    aria-label="Menu principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="../assets/images/logo-white.webp" alt="Logo WK Dev Studio" width="40" height="40" loading="lazy"
+          decoding="async" class="navbar-logo-animated" />
+        <span class="ms-2 fw-bold">WK Dev Studio © <small class="text-muted">Titre</small></span>
+      </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-label="Aller à la page Accueil" href="../index.html"><span
+                class="nav-gradient">Accueil</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-label="Aller à la page À propos" href="a-propos.html"><span
+                class="nav-gradient">À propos</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-label="Aller à la page Projets" href="projets.html"><span
+                class="nav-gradient">Projets</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-label="Aller à la page Contact" href="contact.html"><span
+                class="nav-gradient">Contact</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO & PROFIL -->
+  <header>
+    <section id="accueil" class="hero-animated text-center mb-5">
+      <div class="container" style="max-width: 680px">
+        <!-- Avatar -->
+        <img src="../assets/images/logo-white.webp" alt="Logo WK Dev Studio" class="profile-avatar shadow mb-2 mx-auto"
+          width="40" height="40" />
+        <!-- Nom / Studio -->
+        <h1 class="hero-title studio-name fw-bold fs-4 mb-1">
+          WK Studio Dev ©
+        </h1>
+        <!-- Phrase d'accroche -->
+        <div class="carousel-typewriter mb-3">
+          <span id="carouselTypewriter"></span>
+        </div>
+        <!-- Boutons principaux -->
+        <div class="profile-actions d-flex flex-wrap justify-content-center gap-2 mb-3">
+          <a href="contact.html" class="btn btn-contact btn-sm" aria-label="Aller à la page Contact">
+            <i class="bi bi-envelope-arrow-up me-1"></i>Contact
+          </a>
+
+          <a href="../index.html" class="btn btn-competences btn-sm" aria-label="Aller à la section Compétences">
+            <i class="bi bi-lightbulb me-1"></i>Compétences
+          </a>
+
+          <a href="projets.html" class="btn btn-projets btn-sm" aria-label="Aller à la page Projets">
+            <i class="bi bi-layers me-1"></i>Projets
+          </a>
+
+          <a href="../assets/docs/cv-wkdev.pdf" class="btn btn-cv btn-sm" aria-label="Télécharger le CV" download>
+            <i class="bi bi-file-earmark-arrow-down me-2"></i>Télécharger le
+            CV
+          </a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="container mb-5">
+    <!-- SECTION MES PROJETS -->
+    <section id="projets" class="mb-5">
+      <h2 class="text-center text-white mb-4">
+        <strong>Mes Passions</strong>
+      </h2>
+      <div class="d-flex flex-wrap gap-4 justify-content-center align-items-stretch">
+        <!-- Passion : Développement Web -->
+        <div class="project-card" aria-label="Carte illustrant ma passion pour le développement web">
+          <div class="card h-100 shadow-sm bg-dark text-white border-0 rounded-4 service-card" role="region"
+            aria-labelledby="titre-passion-dev">
+            <div class="card-body text-center position-relative d-flex flex-column justify-content-between">
+              <div>
+                <div class="mb-3" aria-hidden="true">
+                </div>
+                <h5 id="titre-passion-dev" class="card-title mb-2 text-info fw-semibold ">
+                  DEVELOPPEMENT WEB
+                </h5>
+                <p class="card-text small text-secondary px-3">
+                  Le développement web est bien plus qu’un métier : c’est une
+                  <strong>vraie passion</strong> mêlant logique, créativité et
+                  impact. Je construis des interfaces utiles, dynamiques et
+                  modernes.
+                </p>
+
+                <ul class="list-unstyled text-start text-white px-3 mt-3 small"
+                  aria-label="Raisons de ma passion pour le développement web">
+                  <li class="mb-2">
+                    <span class="me-2" role="img" aria-hidden="true">💡</span>
+                    <strong>Créativité & innovation :</strong> concevoir des
+                    interfaces modernes, intuitives et esthétiques est une
+                    source de plaisir.
+                  </li>
+                  <li class="mb-2">
+                    <span class="me-2" role="img" aria-hidden="true">💻</span>
+                    <strong>Maîtrise technique :</strong> j’utilise HTML, CSS,
+                    JavaScript, Bootstrap & Tailwind pour des interfaces
+                    professionnelles.
+                  </li>
+                  <li class="mb-2">
+                    <span class="me-2" role="img" aria-hidden="true">📈</span>
+                    <strong>Apprentissage continu :</strong> je me forme
+                    chaque jour aux meilleures pratiques, frameworks et outils
+                    récents.
+                  </li>
+                  <li class="mb-2">
+                    <span class="me-2" role="img" aria-hidden="true">🤝</span>
+                    <strong>Travail collaboratif :</strong> Git, GitHub,
+                    méthode Agile (Scrum), Gantt, PERT, tout y passe.
+                  </li>
+                  <li class="mb-2">
+                    <span class="me-2" role="img" aria-hidden="true">🌍</span>
+                    <strong>Impact concret :</strong> chaque projet répond à
+                    un besoin réel, utile et accessible.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Passion : Le Design -->
+        <div class="project-card" aria-label="Section présentant ma passion pour le design">
+          <div class="card h-100 shadow-sm bg-dark text-white border-0 rounded-4 service-card" role="region"
+            aria-labelledby="design-title">
+            <div class="card-body text-center position-relative d-flex flex-column justify-content-between">
+              <div>
+                <div class="mb-3 text-center">
+                </div>
+                <h5 id="design-title" class="card-title text-warning fw-600 mb-2">
+                  LE DESIGN
+                </h5>
+                <p class="card-text small text-secondary">
+                  Le design n'est pas simplement une compétence, c'est une
+                  <strong>vocation</strong>. Il est au cœur de mon processus
+                  créatif et guide chacun de mes projets.
+                </p>
+                <ul class="list-unstyled text-start text-white px-3 mt-3">
+                  <li class="mb-2">
+                    <i class="bi bi-palette-fill text-warning me-2" aria-hidden="true"></i>
+                    <strong>Créativité visuelle</strong> : Je conçois des
+                    interfaces élégantes et percutantes, avec une attention
+                    particulière aux détails.
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-phone-landscape text-warning me-2" aria-hidden="true"></i>
+                    <strong>Responsive Design</strong> : Mes créations
+                    s'adaptent parfaitement à tous les formats (mobile,
+                    tablette, desktop).
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-stars text-warning me-2" aria-hidden="true"></i>
+                    <strong>Expérience utilisateur</strong> : Je place
+                    toujours l’utilisateur au centre de la réflexion pour
+                    garantir clarté, fluidité et impact.
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-code-slash text-warning me-2" aria-hidden="true"></i>
+                    <strong>Maîtrise technique</strong> : HTML5, CSS3,
+                    animations UI, et bonnes pratiques SEO / accessibilité.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4 footer" role="contentinfo">
+    <div class="container">
+      <p class="mb-0">
+        2025 WK Dev Studio ©. Tous droits réservés.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (1 seule fois, dernière version) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Ton JS (facultatif, si tu en as besoin) -->
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
