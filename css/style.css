@@ -662,25 +662,35 @@ h1,
   padding: 1rem 1.5rem;
 }
 
-@media (max-width: 991.98px) {
+@media (width <= 600px) {
   .service-card {
     padding: 0.8rem 1.2rem;
+
     /* 🔽 moins de padding interne */
     margin: 0 1rem;
+
     /* 🔽 marge externe gauche/droite */
   }
 }
 
-@media (max-width: 576px) {
+@media (width <= 600px) {
   .service-card {
     padding: 0.8rem 1rem;
+
     /* 🔽 padding interne encore réduit */
     margin: 0 1.2rem;
+
     /* 🔽 marge externe plus large */
   }
 }
 
+h1 {
+  font-size: inherit;
+  line-height: inherit;
+}
+
 /* Spécifique à la section "À propos" */
+
 .service-card h1 {
   margin-bottom: 1.2rem;
   font-size: clamp(1.8rem, 4vw, 2.5rem);
@@ -688,10 +698,6 @@ h1,
 }
 
 /* Supprimer la règle qui écrase .hero-title */
-h1 {
-  font-size: inherit;
-  line-height: inherit;
-}
 
 .service-card .bi {
   color: #fff;
